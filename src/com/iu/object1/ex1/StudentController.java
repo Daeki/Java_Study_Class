@@ -8,7 +8,10 @@ public class StudentController {
 	//start 메서드를 선언
 	public void start() {
 		Scanner sc = new Scanner(System.in);
-		
+		//객체 생성
+		StudentView sv = new StudentView();
+		StudentService studentService = new StudentService();
+		Student [] students=null;
 		boolean check=true;
 		while(check) {
 			System.out.println("1. 학생 정보 입력");
@@ -21,9 +24,11 @@ public class StudentController {
 			switch (select) {
 			case 1: 
 				System.out.println("1");
+				students = studentService.makeStudents();
 				break;
 			case 2 :
 				System.out.println("2");
+				sv.viewAll(students);
 				break;
 			case 3 :
 				System.out.println("3");
