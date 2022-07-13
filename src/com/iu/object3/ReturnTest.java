@@ -4,6 +4,9 @@ import java.util.Random;
 
 public class ReturnTest {
 	
+	//makeAccount
+	//title, host, 통장번호, 잔액 입력받아서 리턴
+	
 	//호출시 숫자를 받아서 그 숫자만큼 랜덤한수를 뽑아서 리턴
 	public int [] makeRandom2(int count) {
 		Random random = new Random();
