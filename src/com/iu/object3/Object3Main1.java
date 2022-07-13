@@ -15,6 +15,11 @@ public class Object3Main1 {
 			System.out.println(nums[i]);
 		}
 		
+		Account account = rt.makeAccount();
+		System.out.println(account.title);
+		System.out.println(account.host);
+		System.out.println(account.numbers);
+		System.out.println(account.balance);
 
 	}
 
