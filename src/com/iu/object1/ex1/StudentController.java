@@ -28,15 +28,15 @@ public class StudentController {
 				break;
 			case 2 :
 				System.out.println("2");
-				sv.viewAll(students);
+				sv.view(students);
 				break;
 			case 3 :
 				System.out.println("3");
 				Student student = studentService.findStudent(students);
 				if(student != null) {
-					sv.viewOne(student);
+					sv.view(student);
 				}else {
-					sv.viewMessage("찾는 학생번호가 없어요");
+					sv.view("찾는 학생번호가 없어요");
 				}
 				break;
 			case 4 :

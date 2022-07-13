@@ -17,10 +17,11 @@ public class StudentService {
 		for(int i=0;i<students.length;i++) {
 			if(num == students[i].num) {
 				student = students[i];
-				break;
+				return student;
+				
 			}
 		}
-		
+	
 		return student;
 	}
 	
